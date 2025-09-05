@@ -6,6 +6,10 @@ app = FastAPI()
 
 app.include_router(metrics_router)
 
+@app.get("/")   # 👈 este es el que falta
+def root():
+    return {"status": "API funcionando 🚀"}
+
 @app.post("/upload_csv/{table_name}")
 async def upload_csv_endpoint(table_name: str, file: UploadFile = File(...)):
     content = await file.read()
