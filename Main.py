@@ -6,7 +6,7 @@ app = FastAPI()
 
 app.include_router(metrics_router)
 
-@app.get("/")   # 👈 este es el que falta
+@app.get("/")
 def root():
     return {"status": "API funcionando 🚀"}
 
