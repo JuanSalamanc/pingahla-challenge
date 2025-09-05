@@ -1,0 +1,41 @@
+# Entornos virtuales
+.venv/
+venv/
+env/
+ENV/
+
+# Archivos de Python compilados
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Archivos de logs y cachés
+*.log
+*.sqlite3
+*.db
+*.bak
+*.tmp
+*.swp
+*.swo
+*.~ 
+
+# Archivos de configuración de IDEs
+.idea/
+.vscode/
+
+# Archivos de test y cobertura
+.tox/
+.nox/
+.coverage
+.pytest_cache/
+htmlcov/
+
+# Archivos de Jupyter
+.ipynb_checkpoints/
+
+# Archivos de documentación generada
+docs/_build/
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
