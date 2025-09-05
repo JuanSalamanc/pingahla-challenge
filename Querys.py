@@ -5,7 +5,7 @@ from ConexionDB import moto_conexion
 router = APIRouter()
 
 @router.get("/metrics/contrataciones_por_trimestre_2021")
-async def contrataciones_por_trimestre_2021():
+def contrataciones_por_trimestre_2021():
     query = """
         SELECT 
         d.department,
